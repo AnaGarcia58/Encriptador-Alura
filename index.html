@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Encriptador</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="ImagenesChallengeEncriptador/LogologoPNG.png" alt="logo de alura" class="logo">
+      <img
+        src="ImagenesChallengeEncriptador/LogologoPNG.png"
+        alt="logo de alura"
+        class="logo"
+      />
     </header>
     <main>
-        <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            <div>
-                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
-            </div>
-        </section>
-        <textarea class="mensaje" cols="20" rows="10"></textarea>
-        <div>
-            <button class="copiar">Copiar</button>
+      <section>
+        <textarea
+          class="text-area"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="recomendaciones">
+            <ul>
+                <li>Ingresar sólo letras minúsculas</li>
+                <li>No utilizar caracteres especiales ni acentos</li>
+            </ul>
         </div>
-        <section>
+        <div class="botones">
+          <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+          <button class="btn-desencriptar" onclick="btndesencriptar()">Desencriptar</button>
+        </div>
+      </section>
 
-        </section>
+      <section>
+        <textarea class="mensaje" cols="20" rows="10"></textarea>
+        <div class="copiar-container">
+          <button class="copiar">Copiar</button>
+        </div>
+      </section>
     </main>
-</body>
+    <footer>
+        <h5>Encriptador by Anabel García</h5>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
