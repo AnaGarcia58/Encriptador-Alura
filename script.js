@@ -52,6 +52,7 @@ function desencriptar(stringDesencriptada){
 btnCopiar.addEventListener("click", function() {
     mensaje.select(); // Selecciona el contenido del área de texto
     document.execCommand("copy"); // Copia el contenido seleccionado al portapapeles
+    
     mensaje.value = "";
 });
 
